@@ -1,0 +1,21 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: grey;
+}
+
+#navbar__links{
+    position: absolute;
+    right: 0px;
+}
+
+#navbar__links a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar__links a.navbar--active{
+    background-color: green;
+}
+

@@ -1,5 +1,7 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
 
+import Navbar from './components/Navbar.jsx'
+
 import rootStyles from './styles/rootStyles.css'
 
 import type { LinksFunction } from "@remix-run/node";
@@ -26,6 +28,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Navbar/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
