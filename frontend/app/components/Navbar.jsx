@@ -1,12 +1,19 @@
 import styles from './styles/Navbar.module.css'
 import { NavLink } from '@remix-run/react'
+import {useState} from 'react'
 
 export default function Navbar(){
 
+    const [isClicked, setIsClicked] = useState(false)
+
+    function handleDropdown(){
+        isClicked ? setIsClicked(false) : setIsClicked(true);        
+    }
+
     return(
         <nav id={styles["navbar"]}>
-            <span>Jayden Naylon</span>
-            <div id={styles['navbar__links']}>
+            <span id={styles['navbar__title']}>Jayden Naylon</span>
+            <div id={styles['navbar__links']} style={{display: isClicked ? 'flex' : 'none'}}>
                 <NavLink
                 to='/'
                 className={({ isActive, isPending }) =>
@@ -42,7 +49,7 @@ export default function Navbar(){
                 }>Contact
                 </NavLink>
             </div>
-            <button>=</button>
+            <button onClick={()=>handleDropdown()}>=</button>
         </nav>
     )
 }

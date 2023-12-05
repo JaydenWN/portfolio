@@ -8,14 +8,27 @@
 #navbar__links{
     position: absolute;
     right: 0px;
+    top: 45px;
+    flex-direction: column;
+    width: 150px;
+    display: none;
+}
+
+#navbar__title{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding--sm);
 }
 
 #navbar__links a{
     text-decoration: none;
     color: black;
+    padding: var(--padding--sm)
 }
 
-#navbar__links a.navbar--active{
+#navbar__links .navbar--active{
     background-color: green;
 }
 
