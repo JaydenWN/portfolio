@@ -1,6 +1,9 @@
 import styles from './styles/Navbar.module.css'
 import { NavLink } from '@remix-run/react'
 import {useState} from 'react'
+import { GiHamburgerMenu } from "react-icons/gi/index.js";
+
+
 
 export default function Navbar(){
 
@@ -13,7 +16,7 @@ export default function Navbar(){
     return(
         <nav id={styles["navbar"]}>
             <span id={styles['navbar__title']}>Jayden Naylon</span>
-            <div id={styles['navbar__links']} style={{display: isClicked ? 'flex' : 'none'}}>
+            <div id={styles['navbar__links']} style={{display: isClicked ? 'flex' : ''}}>
                 <NavLink
                 to='/'
                 className={({ isActive, isPending }) =>
@@ -49,7 +52,11 @@ export default function Navbar(){
                 }>Contact
                 </NavLink>
             </div>
-            <button onClick={()=>handleDropdown()}>=</button>
+    
+            <GiHamburgerMenu 
+            onClick={()=>handleDropdown()}
+            id={styles['navbar__hamburger']} />
+
         </nav>
     )
 }

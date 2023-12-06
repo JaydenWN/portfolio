@@ -3,6 +3,8 @@
     justify-content: space-between;
     height: 45px;
     background-color: grey;
+    container-type: inline-size;
+    container-name: navbarContainer;
 }
 
 #navbar__links{
@@ -12,6 +14,18 @@
     flex-direction: column;
     width: 150px;
     display: none;
+}
+
+@container navbarContainer (width >= 1024px){
+    #navbar__links{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        min-width: fit-content;
+    }
+    #navbar__hamburger{
+        display: none;
+    }
 }
 
 #navbar__title{
@@ -30,5 +44,11 @@
 
 #navbar__links .navbar--active{
     background-color: green;
+}
+
+#navbar__hamburger{
+    font-size: xx-large;
+    height: auto;
+    margin-right: var(--padding--sm); 
 }
 
