@@ -1,5 +1,5 @@
 import styles from './styles/Navbar.module.css'
-import { NavLink } from '@remix-run/react'
+import { NavLink, Link } from '@remix-run/react'
 import {useState} from 'react'
 import { GiHamburgerMenu } from "react-icons/gi/index.js";
 
@@ -15,7 +15,7 @@ export default function Navbar(){
 
     return(
         <nav id={styles["navbar"]}>
-            <span id={styles['navbar__title']}>Jayden Naylon</span>
+            <span id={styles['navbar__title']}><Link to="/">Jayden Naylon</Link></span>
             <div id={styles['navbar__links']} style={{display: isClicked ? 'flex' : ''}}>
                 <NavLink
                 to='/'
