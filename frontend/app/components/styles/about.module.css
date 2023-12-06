@@ -1,0 +1,39 @@
+#about__section{
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    font-weight: 800;
+    gap: 15px;
+    margin: var(--padding--sm);
+    padding-top: 15px;
+}
+
+#about__section p:last-of-type{
+    font-size: large;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+#about__section button{
+    width: fit-content;
+    border-radius: 0px 50px 50px 50px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--main-font);
+    font-size: small;
+    border: 0px;
+    background-color: #343435;
+    color: white;
+}
+
+#about__section div{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: yellow;
+    align-self: center;
+}
