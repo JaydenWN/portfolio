@@ -1,3 +1,10 @@
+#about__container{
+    container-type: inline-size;
+    container-name: aboutContainer;
+    position:  relative;
+    z-index: -1;
+}
+
 #about__section{
     font-family: var(--main-font);
     display: flex;
@@ -5,8 +12,9 @@
     font-size: xx-large;
     font-weight: 800;
     gap: 15px;
-    margin: var(--padding--sm);
-    padding-top: 15px;
+    padding: var(--padding--sm);
+    background-color: #CCFFE5;
+    
 }
 
 #about__section p:last-of-type{
@@ -36,4 +44,21 @@
     border-radius: 100px;
     background-color: yellow;
     align-self: center;
+}
+
+#about__section span{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#about__section span a{
+    text-decoration: none;
+    color: #343435;
+}
+
+@container aboutContainer (width >= 768px){
+    #about__section div{
+        background-color: green;
+    }
 }
