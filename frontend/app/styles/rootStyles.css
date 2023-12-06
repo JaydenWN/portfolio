@@ -1,6 +1,9 @@
 :root {
     --padding--sm: 13px;
-    --main-color: rgb(201, 19, 19)
+	--padding--xl: 175px;
+    --main-color: rgb(201, 19, 19);
+
+	--main-font: 'Poppins', sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,

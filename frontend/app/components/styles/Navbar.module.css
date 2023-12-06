@@ -1,16 +1,17 @@
 #navbar{
     display: flex;
     justify-content: space-between;
-    height: 45px;
-    background-color: grey;
+    height: 75px;
     container-type: inline-size;
     container-name: navbarContainer;
+    border-bottom: 1px solid black;
+    font-family: var(--main-font);
 }
 
 #navbar__links{
     position: absolute;
     right: 0px;
-    top: 45px;
+    top: 75px;
     flex-direction: column;
     width: 150px;
     display: none;
@@ -22,9 +23,15 @@
         display: flex;
         flex-direction: row;
         min-width: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-right: var(--padding--xl);
     }
     #navbar__hamburger{
         display: none;
+    }
+    #navbar__title{
+        margin-left: var(--padding--xl);
     }
 }
 
