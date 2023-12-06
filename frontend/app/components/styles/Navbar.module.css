@@ -6,7 +6,6 @@
     container-name: navbarContainer;
     border-bottom: 1px solid black;
     font-family: var(--main-font);
-   
 }
 
 #navbar__links{

@@ -1,20 +1,11 @@
-#about__container{
-    container-type: inline-size;
-    container-name: aboutContainer;
-    position:  relative;
-    z-index: -1;
-}
-
 #about__section{
-    font-family: var(--main-font);
+    padding: var(--padding--sm);
     display: flex;
+    gap: 15px;
     flex-direction: column;
+    font-family: var(--main-font);
     font-size: xx-large;
     font-weight: 800;
-    gap: 15px;
-    padding: var(--padding--sm);
-    background-color: #CCFFE5;
-    
 }
 
 #about__section p:last-of-type{
@@ -24,6 +15,7 @@
 }
 
 #about__section button{
+    margin-top: var(--padding--sm);
     width: fit-content;
     border-radius: 0px 50px 50px 50px;
     padding: 10px 15px;
@@ -38,7 +30,7 @@
     color: white;
 }
 
-#about__section div{
+#about__image{
     height: 150px;
     width: 150px;
     border-radius: 100px;
@@ -53,12 +45,48 @@
 }
 
 #about__section span a{
+    position: relative;
+    margin-top: auto;
     text-decoration: none;
     color: #343435;
+    z-index: 1;
 }
 
-@container aboutContainer (width >= 768px){
-    #about__section div{
-        background-color: green;
+@media screen and (width >= 768px){
+    #about__section{
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: center;
     }
+
+}
+
+@media screen and (width >= 1024px){
+    #about__section{
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-top: 80px;
+        margin-left: var(--padding--xl);
+        gap: 125px
+    }
+
+    #about__content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #about__section p:last-of-type{
+        margin-top: 75px;
+    }
+
+   
+    
+
+    #about__image{
+        height: 300px;
+        width: 300px;
+        border-radius: 300px;
+    }
+
 }
