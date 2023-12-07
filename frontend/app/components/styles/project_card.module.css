@@ -1,0 +1,35 @@
+.project__card{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding--sm);
+    gap: 20px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.project__card__desc{
+    font-size: small;
+    line-height: 20px;
+}
+.project__card__title{
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.project__card__image{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(179, 179, 179);
+    align-self: center;
+    margin-top: 50px;
+}
+
+.project__card button{
+    max-width: fit-content;
+    padding: 8px var(--padding--sm);
+    border: 0px;
+    background-color: #343435;
+    color: white;
+    align-self: flex-end;
+    margin-top: 50px;
+}
