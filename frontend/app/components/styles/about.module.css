@@ -1,0 +1,121 @@
+#about__hero__section{
+    padding: 60px var(--padding--sm);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-family: var(--main-font);
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+#about__hero__section p:last-of-type{
+    font-size: large;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+#about__hero__section button{
+    margin-top: var(--padding--sm);
+    width: fit-content;
+    border-radius: 0px 50px 50px 50px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--main-font);
+    font-size: small;
+    border: 0px;
+    background-color: #343435;
+    color: white;
+}
+
+#about__hero__image{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: yellow;
+    align-self: center;
+}
+
+#about__hero__section span{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#about__hero__section span a{
+    position: relative;
+    margin-top: auto;
+    text-decoration: none;
+    color: #343435;
+    z-index: 1;
+}
+
+#about__me__section{
+    background-color: #8BFFC6;
+    font-family: var(--main-font);
+    padding: 60px var(--padding--sm);
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+#about__me__section h1{
+    font-size: large;
+    font-weight: 600;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+#about__me__section p{
+    line-height: 26px;
+}
+
+@media screen and (width >= 768px){
+    #about__hero__section{
+        flex-direction: row;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+    #about__me__section{
+        padding: var(--padding--xl) var(--padding--xl);
+    }
+
+}
+
+@media screen and (width >= 1024px){
+    #about__hero__section{
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-top: 80px;
+        margin-left: var(--padding--xl);
+        gap: 125px
+    }
+
+    #about__hero__content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #about__hero__section p:last-of-type{
+        margin-top: 75px;
+    }
+
+    #about__hero__image{
+        height: 300px;
+        width: 300px;
+        border-radius: 300px;
+    }
+
+    #about__me__section{
+        align-items: center;
+    }
+
+    #about__me__section p{
+        line-height: 40px;
+        width: 60%;
+    }
+}
