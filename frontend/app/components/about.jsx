@@ -6,10 +6,10 @@ export default function About(){
 
     return(
         
-            
-        <section id={styles['about__section']}>
-        <div id={styles['about__image']}></div>
-            <div id={styles['about__content']}>
+        <>
+        <section id={styles['about__hero__section']}>
+            <div id={styles['about__hero__image']}></div>
+            <div id={styles['about__hero__content']}>
                 <p>Hello,</p>
                 <p>I'm Jayden Naylon.</p>
                 <p>I'm a Junior Web Developer.</p>
@@ -20,6 +20,10 @@ export default function About(){
             </div>
         </section>
 
+        <section>
+
+        </section>
+        </>
        
     )
 
