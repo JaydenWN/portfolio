@@ -1,3 +1,18 @@
 #project__section{
     font-family: var(--main-font);
+    padding: 60px var(--padding--sm);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#project__section h1{
+    font-size: large;
+    font-weight: 600;
+}
+
+#project__list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

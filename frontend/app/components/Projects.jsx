@@ -5,8 +5,8 @@ export default function Projects(){
 
     return(
         <section id={styles['project__section']}>
-            <h1>Recent Projects</h1>
-            <div className="project__list">
+            <h1>My Recent Projects</h1>
+            <div id={styles["project__list"]}>
                 <Project_card 
                     title={'Project 1'}
                     desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error excepturi dolorum dolores amet cupiditate omnis cum earum soluta optio debitis suscipit unde doloremque aut, ipsum numquam architecto beatae iste et. Fugit impedit'}/>
