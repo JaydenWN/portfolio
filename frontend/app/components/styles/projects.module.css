@@ -16,3 +16,21 @@
     flex-direction: column;
     gap: 50px;
 }
+
+@media screen and (width >= 768px) {
+    #project__section{
+        align-items: center;
+    }
+}
+@media screen and (width >= 1024px) {
+    #project__section{
+        margin-left: var(--padding--xl);
+        margin-right: var(--padding--xl);
+    }
+    #project__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
